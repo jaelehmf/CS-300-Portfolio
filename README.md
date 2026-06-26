@@ -1,12 +1,11 @@
-# CS-300-Portfolio
-SNHU CS 300 DSA: Analysis and Design 
+## CS-300 Portfolio Reflection
 
-## CS-300 Project Two 
+In CS-300, I worked on two connected projects that focused on choosing and implementing data structures and algorithms for a course advising tool. The problem I was solving was how to store and retrieve course information efficiently so academic advisors could load a file of courses, see a full, sorted program list, and look up individual courses with their prerequisites. This required not just making the program work, but making it respond quickly and predictably as the data grows.
 
-This command-line C++ program helps academic advisors at ABCU plan student course schedules. It reads course data from a CSV file into a hash table, then provides:
+To approach the problem, I compared different data structures in terms of runtime and memory: vectors, hash tables, and trees. I analyzed their time complexity for operations like search, insert, and traversal, and considered how much memory overhead each structure adds. This helped me see why data structures matter: using a hash table for fast lookups and then sorting a separate list for display gives better performance and cleaner logic than relying on just one structure for everything.
 
-- An option to load course data into the hash table
-- An alphanumeric list of all Computer Science and Math courses
-- A lookup feature to display a specific course and its prerequisites
+I ran into several roadblocks, including parsing the CSV input correctly, getting the hash table chaining logic right, and dealing with Git and GitHub setup for the portfolio. I overcame these by breaking the work into smaller steps, testing each function independently (file load, insert, search, sort, print), and using documentation and tutorials when I was stuck. For Git/GitHub issues, I carefully followed the error messages, reset the merge state, and configured a simpler editor, which made it easier to complete the push.
 
-The core focus of this project is using efficient data structures and algorithms (hash table with chaining, sorting, and search) to support fast lookup and clean, readable output.
+Working on these projects expanded my approach to designing software by making me think more about structure before code. Instead of just writing functions in whatever order seemed convenient, I started with pseudocode and a clear plan for how data flows from the file into the data structure and out to the user. I now think more intentionally about where to separate concerns (input parsing, storage, sorting, and display) and how those pieces fit together.
+
+These projects also changed how I write programs in terms of maintainability, readability, and adaptability. I made a point to use meaningful names, consistent formatting, and inline comments that match my pseudocode, so future readers (including me) can see the logic without having to reverse-engineer it. I also added error handling for invalid input and missing files, and wrote the code in a way that would be easier to extend—for example, swapping out a data structure or adding new menu options without rewriting the entire program. Overall, the experience pushed me to think like someone who will have to revisit this code later, not just like someone trying to get it to compile once.
